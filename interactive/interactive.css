@@ -1,0 +1,308 @@
+
+/* body section code */
+
+.main {
+    display: flex;
+  }
+  
+  /* navigation-start */
+  .section .navigation {
+    width: 300px;
+    background-color: #35393d;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .nav h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .nav-details summary {
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    background-color: #535758;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-details[open] summary {
+    background-color: #1abc9c;
+    color: white;
+  }
+  
+  .nav-details summary:hover {
+    background-color: #1abc9c;
+  }
+  
+  .nav-details dd {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: none;
+    display: none;
+  }
+  
+  .nav-details[open] dd {
+    display: block;
+  }
+  
+  .nav-details li {
+    margin: 5px 0;
+  }
+  
+  .nav-details li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-details li a:hover {
+    background-color: #444141;
+    color: white;
+  }
+  
+  .nav-details li a:active {
+    background-color: #16a085;
+    color: white;
+  }
+  
+  /* Playground-section */
+  
+  .main .playground {
+    background-color: #333333;
+    height: auto;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    /* padding:20px */
+  }
+  .main .playground h1 {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  #playground-navigation-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  /* Theory-Section */
+  
+  .theory-section {
+    background-color: #3c534d;
+    background-color: black;
+  
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* padding: 20px; */
+  }
+  
+  /* navigation of theory-section */
+  .playground-navigation {
+    background-color: rgb(43, 43, 43);
+    width: 30%;
+    color: white;
+    padding: 20px 10px;
+  }
+  .theory-nav {
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position:sticky;
+    top:10vh;
+  }
+  .theory-nav ul {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+  }
+  
+  .theory-nav h1 {
+    margin-bottom: 20px;
+  }
+  
+  .theory-nav ul li {
+    list-style: none;
+    /* font-weight:bold; */
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+    padding: 0px 5px;
+    border-right: 2px solid white;
+  }
+  
+  .theory-nav ul button {
+    height: 30px;
+    background-color: white;
+    transition: 0.3s;
+    padding: 10px 20px;
+    border: none;
+  }
+  
+  #content{
+    background-color:#8dbcff
+  }
+  
+  .theory-nav ul button:hover {
+    /* background-color: black; */
+    /* color: white; */
+    cursor: pointer;
+  }
+  /* Theory-Content part  */
+  
+  .theory-section .theory-content,
+  .theory-summary,
+  .theory-notes {
+    width: 100%;
+    background-color: black;
+    /* background-color: #21312d; */
+  
+    color: white;
+    padding: 20px;
+  }
+  /* .interactive-section {
+    background-color: rgb(38, 43, 51);
+    width: 20%;
+    height: 90vh;
+  } */
+  
+  .theory-content h1 {
+    /* margin-top: 30px; */
+  }
+  
+  .theory-content h2,
+  h3 {
+    margin-top: 30px;
+  }
+  
+  .theory-content h4 {
+    margin-top: 30px;
+  }
+  
+  .theory-content p,
+  li {
+    display: inline-block;
+    margin: 10px 0px;
+    line-height: 20px;
+  }
+  
+  .theory-content li {
+    /* display: inline-block; */
+    margin-top: 10px;
+  }
+  
+  .theory-content p,
+  li {
+    color: #cccccc;
+    font-family: verdana;
+  }
+  
+  .theory-content strong {
+    color: white;
+  }
+  
+  .theory-section .specific-topic {
+  /* background:linear-gradient(45deg,rgb(0, 162, 255),white) ; */
+  /* background-color: #3c534d; */
+  /* background-color: black; */
+  
+   height: 50px;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight:bold;
+    animation-name: changeback;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+    border-bottom:1px solid white;
+  }
+  
+  /* @keyframes changeback {
+    0% {
+      background: linear-gradient(45deg, rgb(0, 132, 255), white);
+    }
+   
+    100% {
+      background: linear-gradient(-45deg, rgb(0, 132, 255), white);
+    }
+    
+  } */
+  .theory-section img{
+    height:200px;
+    margin:10px 0px;
+  }
+  
+  .theory-summary p,li{
+    color:#cccccc;
+    font-family: verdana;
+    display:inline-block;
+    margin-top:10px
+  }
+  
+  .theory-notes{
+    height:70vh;
+    text-align:center;
+    background-color:rgb(0, 0, 0);
+    
+  }
+  .theory-notes h1{
+    border-bottom:1px solid white
+  }
+  
+  .theory-notes .download-card{
+    box-sizing:border-box;
+    height:auto;
+    width:180px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    align-items:center;
+    margin-top:20px;
+    border-radius:10px;
+    padding:10px
+  }
+  
+  .download-card .download-notes{
+    font-size:120px;
+    background-color:white;
+    border:none;
+    cursor:pointer
+  }
+  .download-card .download-notes:hover{
+    transform:scale(1.05)
+  }
+  
+  .download-card .notes-info{
+    height:40%;
+    /* background-color:black; */
+  }
+  
+  .download-card h2{
+    font-size:1.2rem;
+    margin:10px 0px;
+    color:rgb(0, 0, 0);
+    border-bottom:1px solid black
+  }
+  
+  .download-card p{
+    font-size:0.8rem
+  }
+    .theory-link-button:hover{
+  transform:translateX(-10px)
+    }

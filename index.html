@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/a0f96472cb.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSIT PROJECT</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="sidebar.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo"><h1>LOGO</h1></div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Editor</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <div class="themebtn">
+          <button onclick="fun()"><img src="theme.png" alt="theme" /></button>
+        </div>
+      </header>
+
+      <!-- main -->
+
+      <main class="main">
+        <section class="section navigation">
+          <nav class="nav">
+            <h1>Intro to Computer Science</h1>
+            <button id="toggle-btn" class="toggle-btn" onclick="toggleNav()">☰</button>
+            <details class="nav-details" data-topic="introduction">
+              <summary>Introduction</summary>
+              <dd>
+                <li><a href="#" data-topic="Linux">Linux</a></li>
+                <li><a href="#" data-topic="DevOps">DevOps</a></li>
+                <li><a href="#" data-topic="Networking">Networking</a></li>
+              </dd>
+            </details>
+            <details class="nav-details" data-topic="in-depth">
+              <summary>In Depth</summary>
+              <dd>
+                <li><a href="#" data-topic="topic4">Topic 4</a></li>
+                <li><a href="#" data-topic="topic5">Topic 5</a></li>
+                <li><a href="#" data-topic="topic6">Topic 6</a></li>
+              </dd>
+            </details>
+            <details class="nav-details" data-topic="summary">
+              <summary>Summary</summary>
+              <dd>
+                <li><a href="#" data-topic="topic7">Topic 7</a></li>
+                <li><a href="#" data-topic="topic8">Topic 8</a></li>
+                <li><a href="#" data-topic="topic9">Topic 9</a></li>
+              </dd>
+            </details>
+            <details class="nav-details" data-topic="play">
+              <summary>Play</summary>
+              <dd>
+                <li><a href="#" data-topic="topic10">Topic 10</a></li>
+                <li><a href="#" data-topic="topic11">Topic 11</a></li>
+                <li><a href="#" data-topic="topic12">Topic 12</a></li>
+              </dd>
+            </details>
+            <details class="nav-details" data-topic="blog">
+              <summary>Blog</summary>
+              <dd>
+                <li><a href="#" data-topic="topic13">Topic 13</a></li>
+                <li><a href="#" data-topic="topic14">Topic 14</a></li>
+                <li><a href="#" data-topic="topic15">Topic 15</a></li>
+              </dd>
+            </details>
+          </nav>
+        </section>
+        <!-- playground section  -->
+        <section class="section playground" padding="20px">
+          <div class="title">
+              <h1>Welcome To GuruDev</h1>
+              <div class="para">
+                  <p>- Interactive learning platform for students by studemts</p>
+              </div>
+          </div>
+          <div class="enter">
+              <a class="enterbtn" href="../choose-theory-practical/choose.html">Enter the playground</a>
+          </div>
+          <div class="quiz-section" id="quiz-section" style="display: none;">
+            <!-- Quiz content will be dynamically inserted here by js -->
+          </div>
+          
+      </section>
+      </main>
+
+
+      <!-- content -->
+      <section class="review-section">
+        <div class="review-section-info">
+          <h1>Explore the interesting way of learning tech</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, amet, error ea in pariatur nulla adipisci neque, atque aliquam eligendi architecto saepe minima labore! Porro nobis necessitatibus itaque ex magni voluptate maxime culpa consequatur.</p>
+        </div>
+      </section>
+
+      <!-- courses haru yaa dekhi -->
+      <div class="courses">
+        <h1 class="text-center mb-5">Browse Topics</h1>
+        <ul class="courseko-nav" id="topicsNav">
+            <li class="courseko-nav-item">
+                <a class="courseko-nav-link active" href="#" data-topic="semester1">Semester I</a>
+            </li>
+            <li class="courseko-nav-item">
+                <a class="courseko-nav-link" href="#" data-topic="semester2">Semester II</a>
+            </li>
+            <li class="courseko-nav-item">
+                <a class="courseko-nav-link" href="#" data-topic="semester3">Semester III</a>
+            </li>
+        </ul>
+        <div class="row" id="topicsContent">
+            <!-- Semester I content by default -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="img-container">
+                        <img src="/images/courses/maths1.jpg" alt="Mathematics" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mathematics <span class="badge float-end">14</span></h5>
+                        <p class="card-text">Introduction to Calculus</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    
+    
+
+    <!-- contribution section ho yaa dekhi  -->
+      <section class="contribution">
+        <div class="contribution-info">
+          <h1>Contributors</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, blanditiis.</p>
+        </div>
+        <div class="contribution-gallary">
+          <div class="gallary-shape">
+            <img src="/images/elon.jpg" alt="Contributor">
+            <div class="info">
+              <p class="name">Nischal Pokhrel</p>
+              <p class="job">Software Engineer</p>
+            </div>
+          </div>
+          <div class="gallary-shape">
+            <img src="/images/nischal1.jpg" alt="Contributor">
+            <div class="info"><p class="name">Nischal Basnet</p>
+            <p class="job">Notes Collector</p>
+          </div>
+          </div>
+          <div class="gallary-shape">
+            <img src="/images/Kumar_Nagarkoti_(cropped).jpg" alt="Contributor">
+            <div class="info">
+              <p class="name">John Doe</p>
+              <p class="job">DevOps Engineer</p>
+            </div>
+            
+          </div>
+          <!-- Add more gallary-shape divs as needed -->
+        </div>
+      </section>
+      <!-- footer-section -->
+      <footer class="footer">
+        <div class="about">
+          <h1>About Us</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consectetur unde repudiandae. Libero fugiat molestias fuga quae
+            provident enim nihil reiciendis illo, ipsum repellendus. Quibusdam
+            voluptas, quaerat exercitationem repudiandae quia quis temporibus
+            assumenda aliquam.
+          </p>
+          <div class="useful-links">
+            <h1>Useful Links</h1>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Editor</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact">
+    <h1>Contact Us</h1>
+    <button class="btncnt" id="contactButton">Contact Us</button>
+    <button class="btncnt" id="joinButton">Join Us</button>
+    <div id="contactForm" style="display: none;">
+     
+      <form>
+        <!-- contact form fields -->
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </form>
+    </div>
+    <div id="joinForm" style="display: none;">
+      <!-- Your embedded Google form goes here -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfm0DjBSpijs-KM4kWph87ZgWYwSMM8X09h_MNMd6C6EurPpg/viewform?embedded=true" class="gform" width="640" height="460" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>    </div>
+  </div>
+       
+      </footer>
+      
+    </div>
+
+    <script src="basic.js"></script>
+    <script src="nav-btn.js"></script>
+  </body>
+</html>

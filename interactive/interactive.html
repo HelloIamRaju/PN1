@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Interactive</title>
+    <link rel="stylesheet" href="playground.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="interactive.css" />
+    <link rel="stylesheet" href="../code-parts/header.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo"><h1>LOGO</h1></div>
+        <nav class="nav">
+          <ul>
+            <li><a href="../Basic/index.html">Home</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Editor</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <div class="themebtn">
+          <button onclick="fun()"><img src="theme.png" alt="theme" /></button>
+        </div>
+      </header>
+      <!-- main -->
+
+      <main class="main">
+        <div class="playground-navigation">
+          <h1 id="playground-navigation-title">BSc.CSIT 2nd Semester</h1>
+          <details class="nav-details">
+            <summary>Microprocessor</summary>
+            <dd>
+              <li><a href="#">Home is the Home</a></li>
+              <li><a href="#">Home is the Home</a></li>
+              <li><a href="#">Home is the Home</a></li>
+            </dd>
+          </details>
+          <details class="nav-details">
+            <summary>OOP Using C++</summary>
+            <dd>
+              <li><a href="#">Home is the Home</a></li>
+              <li><a href="#">Home is the Home</a></li>
+              <li><a href="#">Home is the Home</a></li>
+            </dd>
+          </details>
+          <details class="nav-details">
+            <summary>Discrete Structure</summary>
+            <dd>
+              <li><a href="#">Home is the Home</a></li>
+              <li><a href="#">Home is the Home</a></li>
+              <li><a href="#">Home is the Home</a></li>
+            </dd>
+          </details>
+          <details class="nav-details">
+            <summary>Mathematics I</summary>
+            <dd>
+              <li><a href="#">Home is the Home</a></li>
+              <li><a href="#">Home is the Home</a></li>
+              <li><a href="#">Home is the Home</a></li>
+            </dd>
+          </details>
+          <details class="nav-details">
+            <summary>Mathematics II</summary>
+            <dd>
+              <li><a href="#">Home is the Home</a></li>
+              <li><a href="#">Home is the Home</a></li>
+              <li><a href="#">Home is the Home</a></li>
+            </dd>
+          </details>
+        </div>
+
+        <!-- playground section -->
+
+        <section class="playground section">
+          <div class="theory-section">
+            <div class="theory-nav">
+              <!-- <div class="theory-title"><h1>Theory-Section</h1></div> -->
+              <div class="specific-topic">
+                BSc CSIT -> Second -> Microprocessor
+              </div>
+              <div class="theory-link">
+                <ul>
+                  <li>
+                    <button class="theory-link-button" id="content">
+                      Quiz
+                    </button>
+                  </li>
+                  <li>
+                    <button class="theory-link-button" id="summary">
+                      Video
+                    </button>
+                  </li>
+                  <li>
+                    <button class="theory-link-button" id="notes">Refer</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="theory-content" style="display: block"></div>
+            <div class="theory-summary" style="display: none"></div>
+            <div class="theory-notes" style="display: none"></div>
+          </div>
+
+          <!-- <div class="interactive-section">
+            <h1>Interactive-Section</h1>
+          </div> -->
+        </section>
+      </main>
+    </div>
+    <script src="playground.js"></script>
+    <script src="interactive.js"></script>
+  </body>
+</html>

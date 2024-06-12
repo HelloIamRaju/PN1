@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+  }
+  body {
+    overflow-x: hidden;
+    position:absolute
+  }
+  /* Header section code */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 70px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    font-family: sans-serif;
+    z-index: 99;
+  }
+  
+  header ul {
+    display: flex;
+    gap: 0px 70px;
+  
+  }
+  
+  header ul li {
+    list-style: none;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Main Part */
+
+  .main{
+    display:flex;
+    height:100vh;
+    position:fixed;
+    top:10vh;
+    background-color: black;
+
+  }
+
+  .main,.details{
+    flex-direction:column;
+    align-items:center
+  }
+
+  .details,.main,.choose{
+    display:flex;
+  }
+.details{
+  height:20vh;
+  padding:50px
+}
+  .choose-btn{
+    height:60vh;
+    width:50vw;
+    font-size:30px;
+    cursor:pointer;
+    background-color:black;
+    color:white;
+    letter-spacing: 5px;
+    border:none;
+  }
+  
+  
+  #choose-theory-btn{
+    border-right:2px solid white;
+    animation:animate-border;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out
+  }
+  
+     /* Animating the border */
+
+  @keyframes animate-border{
+    0%{border-right:2px solid #ff5959}
+    20%{border-right:2px solid rgb(0, 183, 255)}
+    40%{border-right:2px solid rgb(252, 255, 67)}
+    60%{border-right:2px solid rgb(7, 255, 61)}
+    80%{border-right:2px solid rgb(255, 255, 255)}
+    100%{border-right:2px solid rgb(0, 255, 157)}
+  }
+
+  
+
+  .choose-btn:hover{
+    color:rgb(211, 211, 211);
+  }
+
+
+
+  /* //Chatgpt generated */
+
+  .section.details {
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    max-width: 80vw;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.para1 p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #d8d8d8;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.para2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+}
